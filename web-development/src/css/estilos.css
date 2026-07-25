@@ -1,0 +1,102 @@
+
+           /*el asterisco selecciona todos los elementos de la pag web*/
+           *{
+            margin: 0px;
+            padding: 0px;
+            /*no hay márgenes en toda la web y padding tampoco, este es el margen dentro de una caja*/
+           }
+           
+            body{
+                background: lightskyblue;
+                font-family:Arial, Helvetica, sans-serif ;
+                /*va por orden de preferencia y dependiendo de la máquina*/
+            }
+
+            #container{
+                /*width: 70%;*/
+                width: 1100px;
+                margin: 0px auto;
+                /*Centra el contenido*/
+                border: 1px solid black;
+            }
+
+            header{
+                /*porque solo tenemos una en la pág*/
+                background: green;
+                height: 100px;
+                width: 100%;
+                text-align: center;
+                line-height: 100px; /*le pongo la misma altura que la caja porq asi lo que hace 
+                el texto es ponerse en el medio*/
+                color: white;
+                border-bottom: 3px dashed black;
+                /*podemos poner bordes por cualquier lado este es por debajo y de manera discontinua 
+                de color negro*/
+            
+            
+            
+            }
+            /*si creo mas elmentos header van a tener todos el mismo estilo, no se puede repetir 
+            el ID lo demás si*/
+
+            nav ul li{
+                /*los cojo todos*/
+
+                float: left; /*se echen hacia la izq todos*/
+                list-style: none;
+                margin: 10px; /*no tengan estilo y se separen un poco*/
+                line-height: 30px; /*centrar enlaces*/
+            }
+
+            nav{
+                background: lightgrey;
+                height: 50px;/*definir una altura para poder ver el fondo*/
+                border-bottom;: 1px solid black
+            }
+
+            .clearfix{/*ponemos . para seleccionar una clase*/
+                clear: both; /*cuando los floto hacia la izq todos los demás se quedan por debajo*/
+            }
+
+            #content{
+                float: left;
+                width: 80%;
+                min-height: 500px;
+                background: yellow;
+                padding-left: 10px;
+            }
+
+            aside{
+                float: left;
+                width: calc(20% - 30px); /*usamos calc para que me lo ajuste bien y se refleje bien 
+                junto con los padding*/
+                background: orange;
+                min-height: 500px;
+                padding: 10px; /*padding le da margenes interiores por todos lados, tmb puedo ponerlo 
+                por solo un lado con -lado que quiero*/
+            }
+
+            footer{
+                background: black;
+                color: white;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+            }
+
+            .article{
+                color:black;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                border-bottom: 1px solid lightblue; /*esto pone un gris muy clarito #eee*/
+                padding: 10px;
+            }
+
+            .article h2{ /*seleccioname todos los h2 que esten dentro de article*/
+                font-size: 30px;
+            }
+
+            .article:first-child{ /*cojo el primer artículo y le doy bordes por encima*/
+                border-top: 1px solid lightblue; 
+                padding-top: 10px
+            }

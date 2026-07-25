@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<!--
+    Al poner este comando se nos pone la última versión de html
+-->
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Aprendiendo con Ismael Sallami</title>
+    </head>
+    
+    <body>
+        <h1>Página de contacto</h1>
+        <ul>
+            <li>
+                <a href="index.html" >Inicio </a>
+            </li>
+            <li>
+                <a href="Contacto.html">Contacto</a>
+            </li>
+
+            <!--Como definir tablas? Para ello debemos de usar la etiqueta table, y para indicar 
+            las filas es con tr y las columnas con td, ponemos border para indicar que la tabla debe
+            de rellenar todas los cuadrafos con bordes-->
+
+            <h1> Tablas </h1>
+            <table border="1">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Marca</td>
+                    <td>Modelo</td>
+                </tr>
+                <tr>
+                    <td>Nissan 350Z</td>
+                    <td>Nissan</td>
+                    <td>350Z 290cv</td>
+                </tr>
+            </table>
+
+            <!--También podemos introducir formularios que sean capaces de recoger entradas de texto-->
+            <h1>Formularios</h1>
+            <p>Formularios de contacto</p>
+
+            <form>
+                <label>Nombre</label>
+                <input type="text"/>
+                <!--LABEL  es la etiqueta de como se va a llamr el campo donde se va a introducir el texto
+                e input es la etiqueta encargada de recogerla-->
+
+                <!--Podemos usar la etiqueta select que nos permite seleccionar opciones dentro de las opciones definidas con
+                la etiqueta option, y se le suele poner un value para guardar dicha variable en una base de datos-->
+
+                <br/>
+                <select>
+                    <option value="hombre" > Hombre</option>
+                    <option value="mujer" > Mujer</option>
+                </select>
+
+                <!--Tambien podemos hacer un boton de texto, donde el value contiene el texto de dicho boton-->
+
+                <input type="submit" value="Enviar"/>
+            </form>
+
+        </ul>
+    </body>
+</html>

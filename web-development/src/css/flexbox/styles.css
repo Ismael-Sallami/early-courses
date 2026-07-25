@@ -1,0 +1,60 @@
+body{
+    background: beige;
+}
+
+.flex-container{
+    border:1 px solid black;
+    background: #ccc;
+    padding: 20px;
+    flex-wrap: wrap;
+    flex-flow: row wrap; /*combina los dos tanto row como wrap*/
+    display: flex /*hace lo mismo que desplzarlo a la izq pero no tienes `pk hacer ajustes*/;
+    flex-direction: row; /*determina la dirección de orientación de las cajas*/
+    padding: 20px;
+    margin: 20px;
+    border: black;
+    justify-content:space-between ;
+    /*posee numerosas características interesantes como esta que ocupa todo el espacio pero dejando huecos entre ello*/
+
+    align-items: flex-start;
+    height: 600px;
+
+    /*al haber una altura muy alta si usamos la linea 19 no se va a descuadrar*/
+
+
+    align-content: center ;
+    /*organiza todos los elementos en el centro*/
+}
+/*si ponemos mas cajas todas esas van a compartir ese espacio haciendo dichas cajas más pequeñas, si no queremos
+eso podemos hacer el "wrap"*/
+
+.caja {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+}
+
+.c1{
+    background-color: blue;
+    order: 2;
+    
+}
+.c2{
+    background-color: yellow;
+    order: 1;
+    flex-grow: 4;
+}
+
+/*todo lo que tenga flex-content tiene la posibilidad de ser ordenado por lo que 
+puedo manipular y clasificar los elementos con el orden que yo quiera*/
+
+/*también tenemos la propiedad de flex-grow, dándole mayor prioridad a uno que a otro*/
+
+/*también tenemos el flex-basis que es un width*/

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS con Ismael Sallami</title>
+
+        <!--Hay varias formas de editar CSS, una de ellas puede ser con la etiqueta style o creando 
+        otra
+        hoja por ej: estilos.css para ello debemos de vincularlo
+
+        <style>
+            body{
+                background: lightskyblue;
+            }
+
+            #container{
+
+            }
+
+            .article{
+
+            }
+        </style>
+        -->
+
+        <link rel="stylesheet" href="estilos.css" />
+
+    </head>
+    <body>
+       
+        <div id="container">
+            <!--Div es una caja y el id hace que luego en el CSS le pueda dar estilo y demás buscando
+            con ese identificador-->
+
+            <header>
+                <!--CABECERA de mis sitio web-->
+                <h1>
+                    Ismael Sallami te ayuda a aprender CSS
+                </h1>
+            </header>
+
+
+                <!--Definimos un menú de navegación con la etiqueta nav que es de HTML 5-->
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Inicio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Página 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Página 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Blog
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="clearfix"></div>
+
+
+
+                <section id="content">
+                    <!--Se trata de otra caja y creamos varios artículos con la etiqueta article-->
+
+                    <article class="article">
+                        <h2>Título del artículo</h2>
+                        <p>Texto del artículo</p>
+                    </article>
+
+                    <article class="article">
+                        <h2>Título del artículo</h2>
+                        <p>Texto del artículo</p>
+                    </article>
+
+                    <article class="article">
+                        <h2>Título del artículo</h2>
+                        <p>Texto del artículo</p>
+                    </article>
+
+                    <article class="article">
+                        <h2>Título del artículo</h2>
+                        <p>Texto del artículo</p>
+                    </article>
+                </section>
+
+                <!--aside es para otra caja pero es una barra-->
+
+                <aside>
+                    <h2>Barra Lateral</h2>
+                    <form>
+                        <input type="text"/>
+                        <input type="submit" value="Buscar" />
+                    </form>
+                    
+                </aside>
+                <div class="clearfix"></div> <!--Para que el footer no se suba-->
+        
+                <!--Creamos el pie de página con footer-->
+                <footer>
+                    Ismael Sallami Moreno WEB &copy; 2020
+                </footer>
+        </div>
+    </body>
+</html>
