@@ -1,7 +1,7 @@
 # Early Courses
 
 Notes and exercises from the online courses I took in 2024, during the first
-years of the double degree in Computer Engineering and Business Management at
+years of the double degree in Computer Science and Business Administration at
 the University of Granada.
 
 I wrote each set of notes in LaTeX while following the course. They were three
